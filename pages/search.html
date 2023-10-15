@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class="bi bi-house-door color--hover text-white fs-2"></i></a>
+
+            <form class="d-flex m-auto" role="search" style="position: relative;width: 200px;">
+                <input class="form-control rounded-0 border-top-0 border-start-0 border-end-0 bg-transparent me-2" type="search" placeholder="Search" aria-label="Search" style="width: inherit;">
+                <button class="btn text-white" type="submit" style="position: absolute;right: 0;"><i class="bi bi-search"></i></button>
+            </form>
+        
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <div class="hambuger-menu"><i class="bi bi-list color--hover text-white fs-1"></i></div>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x text-black fs-1"></i></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-center justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link fs-1" aria-current="page" href="./search.html">Search</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link fs-1" aria-current="page" href="#">Register</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link fs-1" aria-current="page" href="#">Login</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link fs-1" aria-current="page" href="./category.html">Blogs</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link fs-1" aria-current="page" href="./profile.html">Profile</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="list-blog" class="my-5">
+      <div class="container">
+        <h2 class="the-title">Search</h2>
+
+        <div class="card bg-dark border-0 rounded-0 mb-4">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="card-head position-relative">
+                  <img src="https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="img-fluid" alt="Taken in Kentucky during the 2017 August Total Eclipse.">
+                  <ul class="category-list clear__ul position-absolute top-0 m-2">
+                      <li class="category-list--item"><a href="#">Blog</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="card-body">
+                  <h5 id="title-blog" class="card-text text-white text-title__wrap">Eclipse</h5>
+                  <p class="card-text text-white text-detail__wrap">Taken in Kentucky during the 2017 August Total Eclipse.</p>
+                  <a href="/pages/detail.html" class="btn btn-color--primary">Read</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-dark border-0 rounded-0 mb-4">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="card-head position-relative">
+                  <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" class="img-fluid" alt="Taken in Kentucky during the 2017 August Total Eclipse.">
+                  <ul class="category-list clear__ul position-absolute top-0 m-2">
+                      <li class="category-list--item"><a href="#">Blog</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="card-body">
+                  <h5 id="title-blog" class="card-text text-white text-title__wrap">Eclipse</h5>
+                  <p class="card-text text-white text-detail__wrap">Taken in Kentucky during the 2017 August Total Eclipse.</p>
+                  <a href="/pages/detail.html" class="btn btn-color--primary">Read</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-dark border-0 rounded-0 mb-4">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="card-head position-relative">
+                  <img src="https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" class="img-fluid" alt="Taken in Kentucky during the 2017 August Total Eclipse.">
+                  <ul class="category-list clear__ul position-absolute top-0 m-2">
+                      <li class="category-list--item"><a href="#">Blog</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="card-body">
+                  <h5 id="title-blog" class="card-text text-white text-title__wrap">Eclipse</h5>
+                  <p class="card-text text-white text-detail__wrap">Taken in Kentucky during the 2017 August Total Eclipse.</p>
+                  <a href="/pages/detail.html" class="btn btn-color--primary">Read</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-dark border-0 rounded-0 mb-4">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="card-head position-relative">
+                  <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="img-fluid" alt="Taken in Kentucky during the 2017 August Total Eclipse.">
+                  <ul class="category-list clear__ul position-absolute top-0 m-2">
+                      <li class="category-list--item"><a href="#">Blog</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="card-body">
+                  <h5 id="title-blog" class="card-text text-white text-title__wrap">Eclipse</h5>
+                  <p class="card-text text-white text-detail__wrap">Taken in Kentucky during the 2017 August Total Eclipse.</p>
+                  <a href="/pages/detail.html" class="btn btn-color--primary">Read</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-dark border-0 rounded-0 mb-4">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="card-head position-relative">
+                  <img src="https://images.unsplash.com/photo-1614729375290-b2a429db839b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1963&q=80" class="img-fluid" alt="Taken in Kentucky during the 2017 August Total Eclipse.">
+                  <ul class="category-list clear__ul position-absolute top-0 m-2">
+                      <li class="category-list--item"><a href="#">Blog</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="card-body">
+                  <h5 id="title-blog" class="card-text text-white text-title__wrap">Eclipse</h5>
+                  <p class="card-text text-white text-detail__wrap">Taken in Kentucky during the 2017 August Total Eclipse.</p>
+                  <a href="/pages/detail.html" class="btn btn-color--primary">Read</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- End row -->
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-2">
+    <div class="container">
+        <ul class="clear__ul d-flex justify-content-center align-items-center">
+        <li><p class="copyright px-1 px-lg-2">© 2023 By <a href="/">Patipan Laily.</a> All rights reserved.</p></li>
+        <li><a href="https://www.linkedin.com/in/patipanlaily/" rel="nofollow" target="_blank"><i class="bi bi-linkedin fs-4 px-1 px-lg-2"></i></a>
+            <a href="https://github.com/patipanlaily/" rel="nofollow" target="_blank"><i class="bi bi-github fs-4"></i></a></li>
+        </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/slides.js"></script>
+</body>
+</html>
